@@ -94,7 +94,7 @@ const PORT = process.env.PORT || 8080;
 // });
 
 app.get("/", (req, res) => {
-  res.status(200).send("server is working");
+  res.status(200).send("server is working v2");
 });
 
 app.listen(PORT, () => {

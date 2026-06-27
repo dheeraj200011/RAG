@@ -18,6 +18,7 @@ app.use(express.json());
 
 const llm = new ChatGroq({
   model: "llama-3.3-70b-versatile",
+  apiKey: process.env.GROQ_API_KEY,
   temperature: 0.7,
   maxTokens: 100,
   maxRetries: 2,
